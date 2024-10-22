@@ -10,7 +10,7 @@ The Kidney Donor Risk Index (KDRI) is a metric used to assess the risk associate
 - **KDRI_traditional**: The original KDRI calculation method, which includes race and HCV.
 - **KDRI_no_race_hcv**: The new KDRI calculation method that reflects updated guidelines, excluding race and HCV.
 
-## Installation
+## Data Preparation
 
 To use this code, you will need to have R installed. Please ensure that the donor characteristics are coded as follows:
 
