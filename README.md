@@ -34,8 +34,7 @@ To use this code, you will need to have R installed. Please ensure that the dono
 - **donor type**: For DCD donors, set `dcd = 1`.
 - **HCV status**: 
   - For **KDRI_traditional**: If the donor is HCV positive, set `hcv = 1`.
-  - For **KDRI_no_race_hcv**: Ignore HCV status.
-- 
+  - For **KDRI_no_race_hcv**: Ignore HCV status. 
 
 
 
