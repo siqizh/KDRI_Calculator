@@ -43,36 +43,36 @@ KDRI_traditional <- function(age, height, weight, race, history_hypertension,
   weight_term <- ifelse(weight < 80, -0.0199 * ((weight - 80) / 5), 0)
   
   # Other terms
-  race_term <- ifelse(race == 1, 0.1794, 0)
+  race_term <- ifelse(race == 1, 0.1790, 0)
   cod_cva_term <- ifelse(cod == 1, 0.0881, 0)
   
   # Hypertension term
   if (history_hypertension %in% c(0, 1)) {
-    hypertension_term <- ifelse(history_hypertension == 1, 0.1262, 0)
+    hypertension_term <- ifelse(history_hypertension == 1, 0.1260, 0)
   } else {
     if (is.null(hypertension_prevalence)) {
       stop("Please provide hypertension_prevalence when history_hypertension contains missingness or values other than 0 and 1.")
     }
-    hypertension_term <- 0.1262 * hypertension_prevalence
+    hypertension_term <- 0.1260 * hypertension_prevalence
   }
   
   # Diabetes term
   if (history_diabetes %in% c(0, 1)) {
-    diabetes_term <- ifelse(history_diabetes == 1, 0.1301, 0)
+    diabetes_term <- ifelse(history_diabetes == 1, 0.1300, 0)
   } else {
     if (is.null(diabetes_prevalence)) {
       stop("Please provide diabetes_prevalence when history_diabetes contains missingness or values other than 0 and 1.")
     }
-    diabetes_term <- 0.1301 * diabetes_prevalence
+    diabetes_term <- 0.1300 * diabetes_prevalence
   }
   
   # Creatinine terms
-  creatinine_term1 <- 0.2198 * (creatinine - 1)
-  creatinine_term2 <- ifelse(creatinine > 1.5, -0.2093 * (creatinine - 1.5), 0)
+  creatinine_term1 <- 0.2200 * (creatinine - 1)
+  creatinine_term2 <- ifelse(creatinine > 1.5, -0.2090 * (creatinine - 1.5), 0)
   
   # HCV and DCD terms
-  hcv_term <- ifelse(hcv == 1, 0.2403, 0)
-  dcd_term <- ifelse(dcd == 1, 0.1329, 0)
+  hcv_term <- ifelse(hcv == 1, 0.2400, 0)
+  dcd_term <- ifelse(dcd == 1, 0.1330, 0)
   
   # Total score
   score <- age_term1 + age_term2 + age_term3 + height_term + weight_term +
