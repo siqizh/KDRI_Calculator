@@ -34,7 +34,17 @@ To use this code, you will need to have R installed. Please ensure that the dono
 - **donor type**: For DCD donors, set `dcd = 1`.
 - **HCV status**: 
   - For **KDRI_traditional**: If the donor is HCV positive, set `hcv = 1`.
-  - For **KDRI_no_race_hcv**: Ignore HCV status. 
+  - For **KDRI_no_race_hcv**: Ignore HCV status.
+
+## Authors
+
+- **Primary Author**: Siqi Zhang, MS  
+  Center for Clinical Epidemiology and Biostatistics, University of Pennsylvania Perelman School of Medicine, Philadelphia, PA, USA  
+
+- **Secondary Author**: Vishnu S. Potluri, MD, MPH  
+  - Leonard Davis Institute of Health Economics, University of Pennsylvania, Philadelphia, PA, USA
+  - Center for Clinical Epidemiology and Biostatistics, University of Pennsylvania Perelman School of Medicine, Philadelphia, PA, USA 
+  - Renal-Electrolyte and Hypertension Division, Department of Medicine, Hospital of the University of Pennsylvania, Philadelphia, PA, USA 
 
 
 
